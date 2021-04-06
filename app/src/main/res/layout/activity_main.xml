@@ -186,7 +186,7 @@
         android:layout_height="0dp"
         android:layout_weight="1.5"
         android:enabled="false"
-        android:onClick="clickBtn"
+        android:onClick="clickRetry"
         android:text="retry" />
 
         <LinearLayout
