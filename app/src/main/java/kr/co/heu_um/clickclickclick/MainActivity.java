@@ -2,6 +2,7 @@ package kr.co.heu_um.clickclickclick;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
@@ -16,6 +17,7 @@ import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
+import java.io.FileDescriptor;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -76,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gameSetting(){
+        //배열만들고
         ArrayList<Integer> arr = new ArrayList<>();
         for (int i = 0; i < btnarr.length; i++) {
             arr.add(i);
