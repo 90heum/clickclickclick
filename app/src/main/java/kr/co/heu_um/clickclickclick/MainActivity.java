@@ -25,7 +25,7 @@ import java.util.Collections;
 public class MainActivity extends AppCompatActivity {
 
     ImageView btn;
-    ImageView[] btnarr = new ImageView[12];
+    ImageView[] btnarr = new ImageView[25];
 
 
     ImageView btnfirst;
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         if (imageIndex == tag) {
             v.setVisibility(View.INVISIBLE);
             imageIndex++;
-            if (imageIndex >= 12) {
+            if (imageIndex >= 25) {
                 tv.setText("Clear");
                 reButton.setEnabled(true);
             } else {
@@ -86,8 +86,8 @@ public class MainActivity extends AppCompatActivity {
         Collections.shuffle(arr);
 
         for (int i = 0; i < btnarr.length; i++) {
-            btnarr[i] = findViewById(R.id.btn01 + i);
-            btnarr[i].setImageResource(R.drawable.btn01 + arr.get(i));
+            btnarr[i] = findViewById(R.id.num01 + i);
+            btnarr[i].setImageResource(R.drawable.num01 + arr.get(i));
             btnarr[i].setTag(arr.get(i));
         }
     }
